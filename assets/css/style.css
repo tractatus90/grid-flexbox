@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;700&display=swap');
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar main'
+        'footer footer';
+    gap: 10px;
+    
+    
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-area: sidebar;
+    padding-left: 40px;
+    border: solid 1px black;
+    border-collapse: collapse;
+    
+}
+
+.sidebar p {
+    font-family: 'Open sans';
+}
+
+.card img {
+    height:auto;
+    width:300px;
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 40px;
+    border: solid 1px black;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: 'roboto';
+    flex-wrap: wrap;
+
+   
+}
+
+.card button {
+    width: 30%;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border: solid 1px black;
+    padding: 10px;
+}
+.footer {
+    text-align: center;
+    grid-area: footer;
+    background-color: beige;
+    border: solid 1px black;
+}
+
+.title {
+    font-family: 'Open sans';
+    font-size: 25px;
+    font-weight: 500;
+}
+/* 
+
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; 
+
+*/
